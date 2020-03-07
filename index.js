@@ -33,6 +33,10 @@ app.listen(process.env.PORT, () =>
 
 const auth = require("./routes/auth");
 const addStudent = require("./routes/addstudent");
+const present = require("./routes/present");
+const orderitems = require("./routes/orderitems");
 
 app.use("/api/auth", auth);
 app.use("/api/addStudent", addStudent);
+app.use("/api/present", present);
+app.use("/api/orderitems", orderitems);

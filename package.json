@@ -1,0 +1,28 @@
+{
+  "name": "c2c-backend",
+  "version": "1.0.0",
+  "description": "<h1>This is the backend for C2C Hackathon</h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/big-ooof/c2c-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/big-ooof/c2c-backend/issues"
+  },
+  "homepage": "https://github.com/big-ooof/c2c-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3",
+    "nodemon": "^2.0.2",
+    "random-number": "0.0.9"
+  }
+}

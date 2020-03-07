@@ -35,8 +35,10 @@ const auth = require("./routes/auth");
 const addStudent = require("./routes/addstudent");
 const present = require("./routes/present");
 const orderitems = require("./routes/orderitems");
+const getStudent = require("./routes/getStudent");
 
 app.use("/api/auth", auth);
 app.use("/api/addStudent", addStudent);
 app.use("/api/present", present);
 app.use("/api/orderitems", orderitems);
+app.use("/api/getStudent", getStudent);

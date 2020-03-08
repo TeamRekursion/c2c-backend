@@ -6,13 +6,13 @@ const food = new mongoose.Schema({
     type: String,
     required: true
   },
-  price: {
+  quantity: {
     type: Number,
-    required: true
+    default: 0
   },
-  junk: {
-    type: Boolean,
-    required: true
+  date: {
+    type: String,
+    default: new Date().getDay().toString() +"  "+ new Date().getDate().toString()+"-"+ new Date().getMonth().toString() +"-"+ new Date().getFullYear().toString()
   }
 });
 

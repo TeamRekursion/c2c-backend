@@ -27,9 +27,7 @@ mongoose.connect(
 );
 
 //Setting up server
-app.listen(process.env.PORT, () =>
-  console.log("Server is up and running")
-);
+app.listen(process.env.PORT, () => console.log("Server is up and running"));
 
 const auth = require("./routes/auth");
 const addStudent = require("./routes/addstudent");
@@ -37,6 +35,11 @@ const present = require("./routes/present");
 const orderitems = require("./routes/orderitems");
 const getStudent = require("./routes/getStudent");
 const balance = require("./routes/balance");
+const addFood = require("./routes/addFood");
+const getFood = require("./routes/getFood");
+const getConsumption = require("./routes/getconsumption");
+const addData = require("./routes/addData");
+const getData = require("./routes/getData");
 
 app.use("/api/auth", auth);
 app.use("/api/addStudent", addStudent);
@@ -44,3 +47,8 @@ app.use("/api/present", present);
 app.use("/api/orderItems", orderitems);
 app.use("/api/getStudent", getStudent);
 app.use("/api/balance", balance);
+app.use("/api/addFood", addFood);
+app.use("/api/getFood", getFood);
+app.use("/api/getConsumption", getConsumption);
+app.use("/api/addData", addData);
+app.use("/api/getData", getData);

@@ -20,9 +20,8 @@ const food = new mongoose.Schema({
 });
 const day = new mongoose.Schema({
   date: {
-    type: Date,
-    required: true,
-    default: new Date().getTime()
+    type: String,
+    default: new Date().getDay().toString() +"  "+ new Date().getDate().toString()+"-"+ new Date().getMonth().toString() +"-"+ new Date().getFullYear().toString()
   },
   item: {
     type: [food],

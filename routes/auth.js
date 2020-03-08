@@ -10,7 +10,7 @@ router.post("/", (req, res) => {
       if (data.code === parseInt(code)) {
         res.json(data);
       } else {
-        res.json({ Error: "Code and Student does not match" });
+        res.status(401).json({ Error: "Code and Student does not match" });
       }
     })
     .catch(err => {

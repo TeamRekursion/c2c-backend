@@ -7,7 +7,10 @@ router.post("/", (req, res) => {
   const code = req.body.code;
   Student.findOne({ name: name })
     .then(data => {
-      if (data.code === parseInt(code)) {
+      if (data === null) {
+        res.status(404).send({ Status: "User Not Found" });
+      }
+      else if (data.code === parseInt(code)) {
         res.json(data);
       } else {
         res.status(401).json({ Error: "Code and Student does not match" });

@@ -3,7 +3,7 @@ const router = require("express").Router();
 const Student = require("../model/student");
 
 router.get("/:StudentID", (req, res) => {
-  Student.findbyId(req.params.StudentID)
+  Student.findById(req.params.StudentID)
     .then(data => {
       res.json(data);
     })

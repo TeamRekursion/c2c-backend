@@ -24,7 +24,7 @@ router.get("/:StudentID/:DayID", (req, res) => {
           } else {
             res.json({
               Status: "Successfully Updated Balance",
-              "Balance Remaning": balance
+              "Balance Remaining": balance
             });
           }
         }

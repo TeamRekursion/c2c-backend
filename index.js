@@ -37,7 +37,6 @@ const getStudent = require("./routes/getStudent");
 const balance = require("./routes/balance");
 const addFood = require("./routes/addFood");
 const getFood = require("./routes/getFood");
-const getConsumption = require("./routes/getconsumption");
 const addData = require("./routes/addData");
 const getData = require("./routes/getData");
 
@@ -49,6 +48,5 @@ app.use("/api/getStudent", getStudent);
 app.use("/api/balance", balance);
 app.use("/api/addFood", addFood);
 app.use("/api/getFood", getFood);
-app.use("/api/getConsumption", getConsumption);
 app.use("/api/addData", addData);
 app.use("/api/getData", getData);

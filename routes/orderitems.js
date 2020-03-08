@@ -9,16 +9,7 @@ router.post("/:StudentID/:DayID", (req, res) => {
     { $push: { "history.$.item": req.body } }
   )
     .then(() => {
-      Food.findOneAndUpdate(
-        { name: req.body.name },
-        { $inc: { quantity: req.body.quantity } }
-      )
-        .then(() => {
-          res.json({ Status: "Successfully Added Items" });
-        })
-        .catch(err => {
-          res.json(err);
-        });
+      res.json({ Status: "Successfully Added Items" });
     })
     .catch(err => {
       res.json(err);

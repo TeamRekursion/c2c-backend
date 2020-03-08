@@ -2,8 +2,8 @@
 const router = require("express").Router();
 const Student = require("../model/student");
 
-router.get("/:StudentID", (req, res) => {
-  Student.findById(req.params.StudentID)
+router.get("/", (req, res) => {
+  Student.find()
     .then(data => {
       res.json(data);
     })

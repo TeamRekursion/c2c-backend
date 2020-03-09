@@ -38,6 +38,7 @@ const addFood = require("./routes/addFood");
 const getFood = require("./routes/getFood");
 const addData = require("./routes/addData");
 const getData = require("./routes/getData");
+const getBalance = require("./routes/getBalance");
 
 app.use("/api/auth", auth);
 app.use("/api/addStudent", addStudent);
@@ -48,3 +49,4 @@ app.use("/api/addFood", addFood);
 app.use("/api/getFood", getFood);
 app.use("/api/addData", addData);
 app.use("/api/getData", getData);
+app.use("/api/getBalance", getBalance);

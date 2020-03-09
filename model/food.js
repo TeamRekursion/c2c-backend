@@ -12,7 +12,7 @@ const food = new mongoose.Schema({
   },
   date: {
     type: String,
-    default: new Date().getDay().toString() +"  "+ new Date().getDate().toString()+"-"+ new Date().getMonth().toString() +"-"+ new Date().getFullYear().toString()
+    default: new Date().getDate().toString()+"-"+ new Date().getMonth().toString() +"-"+ new Date().getFullYear().toString()
   }
 });
 

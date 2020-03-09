@@ -12,7 +12,7 @@ router.post("/", (req, res) => {
       if (err) {
         res.json(err);
       } else {
-        res.json({ id });
+        res.json(id);
       }
     }
   );

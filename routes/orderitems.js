@@ -9,9 +9,7 @@ router.post("/:StudentID/:DayID", (req, res) => {
     let p = [...data.history[0].item];
     for (let day of data.history) {
       if (day._id.toString() === req.params.DayID) {
-        console.log(day);
         for (let items of day.item) {
-          //console.log(items);
           cost = cost + items.price * items.quantity;
         }
       }
